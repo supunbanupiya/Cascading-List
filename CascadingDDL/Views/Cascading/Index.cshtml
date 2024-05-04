@@ -1,0 +1,35 @@
+﻿@{
+	ViewData["Title "] = "Cascading Drop Down List";
+}
+<h2>@ViewData["Title"]</h2>
+<hr/>
+<div class="container">
+	<div class="card border-primary">
+		<div class="card-header fw-bold border-primary">
+			Cascading DDL
+		</div>
+		<div class="row">
+			<div class="col-10 offset-1">
+				<form>
+					<div class="mb-2">
+						<label>Country</label>
+						<select id="country"class="form-control"></select>
+					</div>
+					<div class="mb-2">
+						<label>State</label>
+						<select id="state" class="form-control"></select>
+					</div>
+					<div class="mb-2">
+						<label>City</label>
+						<select id="city" class="form-control"></select>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+@* <a href="~/lib/jquery/dist/jquery.min.map">~/lib/jquery/dist/jquery.min.map</a> *@
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/CascadingDDL.js"></script>
+
